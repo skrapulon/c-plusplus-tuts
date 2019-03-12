@@ -1,16 +1,16 @@
-#include <iostream>
-using namespace std;
+// my first string
 
-int main()
+#include <iostream> //iostream.h
+#include <string> //string.h
+using namespace std; //no need for std::
+
+int main ()
 {
-  int a=5;   // initial value:5
-  int b(3);  // initial value:3
-  int c{2};  // initial value:2
-  int result; // initial value undetermined
-
-  a = a + b; // 8
-  result = a - c; // 8-2
-  cout << result; // print result 
+  string mystring; //string def = mystring
+  mystring = "This is a string"; // value of string
+  cout << mystring << endl; // output string in row go to next
+  mystring = "This is a different string"; //you get it
+  cout << mystring << endl;
 
   return 0;
 }
