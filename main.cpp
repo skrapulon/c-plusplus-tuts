@@ -1,9 +1,23 @@
-// my first program in C++
-#include <iostream> // load header iostream.h
-using namespace std; // this allows all elements in the std namespace to be accessed in an unqualified manner (without the std:: prefix)
-					// blank line does nothing
-int main()			// initiation of the main function
-{					// { indicates the beginning of the main function 
-	std::cout << "Hello World!"; // std::cout = standard character output << = instert into "Hello World" content inserted into the standard output, ; end of a statement 
-	cout << "Like this."; //comment on the 3rd line
-}					// end of main function 
+// operating with variables
+
+#include <iostream> // use iostream.h header file, contains basic functions and variables
+using namespace std; // tnx to this we dont have to type std::cout (just cout)
+
+int main () // initialize main function
+{
+  // declaring variables:
+  int a, b; // a and b are of int value 4bytes of memory, ranges from (-2147483648 to 2147483647 )
+  int result; // result = int value
+
+  // process:
+  a = 5; // straighforward declaring a=5
+  b = 2; // straighforward declaring b=2
+  a = a + 1; // declaring a = 5(previous value)+1
+  result = a - b; // 6-2
+
+  // print out the result:
+  cout << result; 
+
+  // terminate the program:
+  return 0;
+}
