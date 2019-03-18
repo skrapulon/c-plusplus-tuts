@@ -1,16 +1,21 @@
+//Operators
+
+// assignment operator
+
 #include <iostream>
 using namespace std;
 
-int main()
+int main ()
 {
-  int a=5;   // initial value:5
-  int b(3);  // initial value:3
-  int c{2};  // initial value:2
-  int result; // initial value undetermined
+  int a, b;
+  a = 10; // a:?, b:?
+  b = 4; // a:10, b:?
+  a = b; // a:4, b:4
+  b = 7; // a:4, b:7
 
-  a = a + b; // 8
-  result = a - c; // 8-2
-  cout << result; // print result 
+  cout << "a:";
+  cout << a <<endl;
+  cout << "b:";
+  cout << b;
 
-  return 0;
 }
