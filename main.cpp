@@ -1,21 +1,23 @@
-//Operators
+// operating with variables
 
-// assignment operator
+#include <iostream> // use iostream.h header file, contains basic functions and variables
+using namespace std; // tnx to this we dont have to type std::cout (just cout)
 
-#include <iostream>
-using namespace std;
-
-int main ()
+int main () // initialize main function
 {
-  int a, b;
-  a = 10; // a:?, b:?
-  b = 4; // a:10, b:?
-  a = b; // a:4, b:4
-  b = 7; // a:4, b:7
+  // declaring variables:
+  int a, b; // a and b are of int value 4bytes of memory, ranges from (-2147483648 to 2147483647 )
+  int result; // result = int value
 
-  cout << "a:";
-  cout << a <<endl;
-  cout << "b:";
-  cout << b;
+  // process:
+  a = 5; // straighforward declaring a=5
+  b = 2; // straighforward declaring b=2
+  a = a + 1; // declaring a = 5(previous value)+1
+  result = a - b; // 6-2
 
+  // print out the result:
+  cout << result; 
+
+  // terminate the program:
+  return 0;
 }
